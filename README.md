@@ -30,7 +30,7 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 #待开发功能
-    #胡炯 - 增加导出Csv文件的功能
+    #**** - 增加导出Csv文件的功能
 
 
 

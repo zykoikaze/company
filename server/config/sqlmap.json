@@ -1,0 +1,27 @@
+{
+  "user": {
+    "addUser": "insert into (version,apply_time) values (?,?)",
+    "select":"select * user where user_id=?"
+  },
+  "askForLeave":{ 
+    "selectAll":"select * from ask_for_leave order by id DESC",
+    "selectOne":"select * from ask_for_leave where create_time=?",
+    "selectMonth":"SELECT * FROM ask_for_leave WHERE start_time LIKE ?",
+    "selectTime":"select * from ask_for_leave where user_id=? and start_time=? and end_time=?",
+    "addOneData":"insert into ask_for_leave(user_id,user_name,leave_type,create_time,start_time,end_time,time_type,count_days,count_hours,total_time,reason_for_leave) values (?,?,?,?,?,?,?,?,?,?,?)",
+    "uploadData":"update ask_for_leave set enclosure = ? where id = ?",
+    "uploadSelect":"select * from ask_for_leave where  id = ?",
+    "deleteData":"delete from ask_for_leave where id=?",
+    "ImageSelect":"select enclosure from ask_for_leave where  id = ?",
+    "Imagedelete":"update ask_for_leave set enclosure = ? where id = ?"
+  },
+  "overtimeWork":{
+    "selectAll":"select * from overtime_for_work order by id DESC",
+    "addOneData":"insert into overtime_for_work(user_id,user_name,create_time,start_time,end_time,work_days,work_hours,over_time,reason_for_work) values (?,?,?,?,?,?,?,?,?)",
+    "uploadImage":"update overtime_for_work set enclosure = ? where id = ?",
+    "uploadSelect":"select * from overtime_for_work where  id = ?",
+    "ImageSelect":"select enclosure from overtime_for_work where  id = ?",
+    "Imagedelete":"update overtime_for_work set enclosure = ? where id = ?",
+    "deleteRow":"delete from overtime_for_work where id=?"
+  }
+}
